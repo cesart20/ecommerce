@@ -1,5 +1,3 @@
-/* eslint-disable react/display-name */
-/* eslint-disable import/no-anonymous-default-export */
 import { titleFont } from '@/config/fonts';
 import Link from 'next/link';
 
@@ -13,13 +11,13 @@ export default function () {
 
         <label htmlFor="email">Correo electrónico</label>
         <input
-          className="px-5 py-2 border bg-gray-300 rounded mb-5"
+          className="px-5 py-2 border bg-gray-200 rounded mb-5"
           type="email" />
 
 
         <label htmlFor="email">Contraseña</label>
         <input
-          className="px-5 py-2 border bg-gray-300 rounded mb-5"
+          className="px-5 py-2 border bg-gray-200 rounded mb-5"
           type="email" />
 
         <button

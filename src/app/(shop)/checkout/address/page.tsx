@@ -1,7 +1,5 @@
-/* eslint-disable react/display-name */
-/* eslint-disable import/no-anonymous-default-export */
-
 import Link from 'next/link';
+
 import { Title } from '@/components';
 
 export default function() {

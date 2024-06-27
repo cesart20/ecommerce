@@ -1,5 +1,3 @@
-/* eslint-disable react/display-name */
-/* eslint-disable import/no-anonymous-default-export */
 // https://tailwindcomponents.com/component/hoverable-table
 import { Title } from '@/components';
 

@@ -1,33 +1,27 @@
-/* eslint-disable react/display-name */
-/* eslint-disable import/no-anonymous-default-export */
-import Link from "next/link";
-import { IoCartOutline } from "react-icons/io5";
-
-
-
-
+import Link from 'next/link';
+import { IoCartOutline } from 'react-icons/io5';
 
 export default function() {
   return (
     <div className="flex justify-center items-center h-[800px]">
-      <IoCartOutline size={80} className="mx-5" />
+
+      <IoCartOutline size={ 80 } className="mx-5" />
 
       <div className="flex flex-col items-center">
         <h1 className="text-xl font-semibold">
-          Tu carrito esta vacio
+          Tu carrito está vacío
         </h1>
 
-        <Link
-          href="/"
+        <Link 
+          href='/'
           className="text-blue-500 mt-2 text-4xl"
         >
           Regresar
         </Link>
 
-
       </div>
 
-
+      
     </div>
   );
 }
