@@ -32,7 +32,7 @@ async function main() {
   const categoriesMap = categoriesDB.reduce( (map, category) => {
     map[ category.name.toLowerCase()] = category.id;
     return map;
-  }, {} as Record<string, string>);  //<string=shirt, string=categoryID>
+  }, {} as Record<string, string>); //<string=shirt, string=categoryID>
   
   
 
