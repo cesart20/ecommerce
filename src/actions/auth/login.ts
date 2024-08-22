@@ -3,7 +3,7 @@
 'use server';
  
 import { sleep } from '@/utils';
-import { signIn } from '../../../auth.config';
+import { signIn } from '../../auth.config';
 import { AuthError } from 'next-auth';
 
 export async function authenticate(
@@ -30,4 +30,25 @@ export async function authenticate(
     return 'UnknownError';
 
   }
+}
+
+export const login = async (email: string, password: string) => {
+
+  try {
+    await signIn('credentials', {
+      email,
+      password,
+    })
+
+    return { ok: true }
+
+  } catch (error) {
+    console.log(error);
+    return {
+      ok: false,
+      message: 'Error al iniciar sesion'
+    }
+     
+  }
+
 }

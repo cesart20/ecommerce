@@ -7,7 +7,7 @@ export * from './products/product-grid/ProductGridItem';
 export * from './product/stock-label/StockLabel';
 
 
-
+export * from './provider/Provider';
 
 export * from './product/slideshow/ProductSlideShow';
 export * from './product/slideshow/ProductMobileSlideShow';
