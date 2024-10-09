@@ -21,6 +21,9 @@ export default async function Home({ searchParams }: Props) {
 
   const { products, currentPage, totalPages } = await getPaginatedProductsWithImages({ page });
 
+  const productWithImages = products.filter(
+    (product) => product.images.length !== 0
+  )
 
   if ( products.length === 0 ) {
     redirect('/');
@@ -36,7 +39,7 @@ export default async function Home({ searchParams }: Props) {
       />
 
       <ProductGrid 
-        products={ products }
+        products={ productWithImages }
       />
 
 

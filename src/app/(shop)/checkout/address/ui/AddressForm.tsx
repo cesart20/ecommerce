@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 'use client'
 
 
@@ -57,7 +56,7 @@ export const AddressForm = ({countries, userDbAddress = {}}: Props) => {
         if (address.firstName) {
             reset(address);
         }
-    }, [])
+    }, [address, reset])
 
     if (cart.length === 0) {
 

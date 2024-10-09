@@ -137,7 +137,7 @@ export const PlaceOrder = () => {
                 }
                 // href="/orders/123"
                 >
-                Colocar orden
+                Pagar orden
               </button>
             </div>
 
